@@ -1,0 +1,21 @@
+We said that the 75% of the time is spent waiting I/O operations: 
+the remaining 25% scales well with the available cores.
+Therefore, the P parameter in Amdahl's law will be .25.
+Now, taking into account the different values of the P and N parameter
+suggested in the exercise, the speedups with respect to the 
+serial version are:
+
+P=25% N=4 -> S=1.23
+P=25% N=8 -> S=1.28
+P=25% N=200 -> S=1.33
+P=30% N=4 -> S=1.29
+
+Please hire the consultant!
+
+This is simple python function to check the numbers above:
+
+def a(n,p):
+    return 1./((1-p)+float(p)/n)
+
+
+

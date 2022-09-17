@@ -1,0 +1,787 @@
+Reading profile data.
+Parsing igprof output file customersOpt.pp.gz: nm: /afs/cern.ch/sw/lcg/contrib/gcc/4.8.1/x86_64-slc6-gcc48-opt/lib64/libstdc++.so.6.0.18: no symbols
+ done
+Applying filter igprof remover: .................................................................................................... done
+Summing counters: ............................................................................................................................................................................................................................................................................................................. done
+Building call tree map: ......................................................................................................................................................................................................... done
+Sorting.
+Resolving symbols.
+warning: File "/afs/cern.ch/sw/lcg/contrib/gcc/4.8.1/x86_64-slc6-gcc48-opt/lib64/libstdc++.so.6.0.18-gdb.py" auto-loading has been declined by your `auto-load safe-path' set to "/usr/share/gdb/auto-load:/usr/lib/debug:/usr/bin/mono-gdb.py".
+Generating report.
+Counter: PERF_TICKS
+
+----------------------------------------------------------------------
+Flat profile (cumulative >= 1%)
+
+% total      Total  Function
+  100.0       7.51  <spontaneous> [1]
+  100.0       7.51  _start [2]
+  100.0       7.51  __libc_start_main [3]
+   90.0       6.76  main [4]
+   75.8       5.69  readCustomersData(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) [5]
+   56.6       4.25  fillCustomerData(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) [6]
+   27.6       2.08  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_safe(unsigned long, unsigned long, char const*, unsigned long) [7]
+   23.7       1.78  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, unsigned long) [8]
+   19.4       1.46  operator new(unsigned long) [9]
+   18.5       1.39  malloc [10]
+   18.2       1.37  strtok [11]
+   18.1       1.36  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) [12]
+   16.5       1.24  _int_malloc [13]
+   14.2       1.07  fillCustomerDataAlphabetic() [14]
+   10.0       0.75  exit [15]
+    9.8       0.74  std::deque<Customer, std::allocator<Customer> >::~deque() [16]
+    9.6       0.72  std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [17]
+    8.5       0.64  Customer::~Customer() [18]
+    8.5       0.64  std::deque<Customer, std::allocator<Customer> >::_M_destroy_data(std::_Deque_iterator<Customer, Customer&, Customer*>, std::_Deque_iterator<Customer, Customer&, Customer*>, std::allocator<Customer> const&) [19]
+    8.5       0.64  std::deque<Customer, std::allocator<Customer> >::_M_destroy_data_aux(std::_Deque_iterator<Customer, Customer&, Customer*>, std::_Deque_iterator<Customer, Customer&, Customer*>) [20]
+    8.5       0.64  void std::_Destroy<Customer*, Customer>(Customer*, Customer*, std::allocator<Customer>&) [21]
+    8.3       0.62  void std::_Destroy<Customer*>(Customer*, Customer*) [22]
+    8.3       0.62  void std::_Destroy_aux<false>::__destroy<Customer*>(Customer*, Customer*) [23]
+    7.8       0.59  void std::_Destroy<Customer>(Customer*) [24]
+    7.1       0.53  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() [25]
+    6.3       0.47  std::deque<std::deque<Customer*, std::allocator<Customer*> >, std::allocator<std::deque<Customer*, std::allocator<Customer*> > > >::operator[](unsigned long) [26]
+    5.9       0.44  std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator[](long) const [27]
+    5.4       0.41  @{libstdc++.so.6.0.18+773403} [28]
+    5.1       0.38  std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator+(long) const [29]
+    4.4       0.33  std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator+=(long) [30]
+    4.3       0.32  memcpy [31]
+    3.6       0.27  _ZNSt5dequeI8CustomerSaIS0_EE12emplace_backIJS0_EEEvDpOT_ [32]
+    3.5       0.26  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator=(char const*) [33]
+    3.1       0.23  Customer::Customer(unsigned int, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [34]
+    3.1       0.23  _int_free [35]
+    3.0       0.22  std::basic_filebuf<char, std::char_traits<char> >::underflow() [36]
+    2.9       0.22  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::append(char const*, unsigned long) [37]
+    2.9       0.22  std::__basic_file<char>::xsgetn(char*, long) [38]
+    2.9       0.22  __read_nocancel [39]
+    2.8       0.21  __strlen_sse42 [40]
+    2.7       0.20  std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::operator[](unsigned long) [41]
+    2.7       0.20  std::__deque_buf_size(unsigned long) [42]
+    2.6       0.20  __strcpy_ssse3 [43]
+    2.6       0.20  std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::_S_buffer_size() [44]
+    2.3       0.17  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [45]
+    2.2       0.17  _ZNSt5dequeIP8CustomerSaIS1_EE12emplace_backIJS1_EEEvDpOT_ [46]
+    1.9       0.14  _ZNSt5dequeI8CustomerSaIS0_EE16_M_push_back_auxIJS0_EEEvDpOT_ [47]
+    1.6       0.12  std::_Deque_base<Customer, std::allocator<Customer> >::_M_allocate_node() [48]
+    1.4       0.11  __gnu_cxx::new_allocator<Customer>::allocate(unsigned long, void const*) [49]
+    1.4       0.10  std::_Deque_base<Customer, std::allocator<Customer> >::~_Deque_base() [50]
+    1.4       0.10  std::_Deque_base<Customer, std::allocator<Customer> >::_M_destroy_nodes(Customer**, Customer**) [51]
+    1.4       0.10  std::_Deque_base<Customer, std::allocator<Customer> >::_M_deallocate_node(Customer*) [52]
+    1.4       0.10  __gnu_cxx::new_allocator<Customer>::deallocate(Customer*, unsigned long) [53]
+    1.2       0.09  _init [54]
+    1.1       0.08  _ZN9__gnu_cxx13new_allocatorI8CustomerE9constructIS1_JS1_EEEvPT_DpOT0_ [55]
+    1.0       0.07  Customer::getName() [56]
+
+
+----------------------------------------------------------------------
+Flat profile (self >= 0.01%)
+
+% total       Self  Function
+  18.21       1.37  strtok [11]
+  16.21       1.22  _int_malloc [13]
+   5.43       0.41  @{libstdc++.so.6.0.18+773403} [28]
+   4.31       0.32  memcpy [31]
+   3.99       0.30  fillCustomerDataAlphabetic() [14]
+   3.12       0.23  _int_free [35]
+   2.88       0.22  __read_nocancel [39]
+   2.80       0.21  __strlen_sse42 [40]
+   2.72       0.20  std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::operator[](unsigned long) [41]
+   2.72       0.20  std::__deque_buf_size(unsigned long) [42]
+   2.64       0.20  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, unsigned long) [8]
+   2.64       0.20  __strcpy_ssse3 [43]
+   2.32       0.17  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [45]
+   2.00       0.15  malloc [10]
+   1.92       0.14  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_safe(unsigned long, unsigned long, char const*, unsigned long) [7]
+   1.68       0.13  std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [17]
+   1.44       0.11  std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator+=(long) [30]
+   1.28       0.10  fillCustomerData(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) [6]
+   1.20       0.09  Customer::~Customer() [18]
+   1.20       0.09  _init [54]
+   1.04       0.08  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() [25]
+   1.04       0.08  _ZNSt5dequeIP8CustomerSaIS1_EE12emplace_backIJS1_EEEvDpOT_ [46]
+   0.96       0.07  memchr [57]
+   0.88       0.07  free [59]
+   0.80       0.06  operator new(unsigned long) [9]
+   0.72       0.05  Customer::Customer(unsigned int, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [34]
+   0.72       0.05  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::assign(char const*, unsigned long) [60]
+   0.64       0.05  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::c_str() const [61]
+   0.56       0.04  _ZNSt5dequeI8CustomerSaIS0_EE12emplace_backIJS0_EEEvDpOT_ [32]
+   0.56       0.04  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator=(char const*) [33]
+   0.56       0.04  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::append(char const*, unsigned long) [37]
+   0.48       0.04  void std::_Destroy_aux<false>::__destroy<Customer*>(Customer*, Customer*) [23]
+   0.48       0.04  std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator[](long) const [27]
+   0.40       0.03  readCustomersData(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) [5]
+   0.40       0.03  void std::_Destroy<Customer>(Customer*) [24]
+   0.40       0.03  std::deque<std::deque<Customer*, std::allocator<Customer*> >, std::allocator<std::deque<Customer*, std::allocator<Customer*> > > >::operator[](unsigned long) [26]
+   0.40       0.03  std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator+(long) const [29]
+   0.40       0.03  Customer::Customer(Customer&&) [58]
+   0.40       0.03  bool std::operator!=<Customer, Customer&, Customer*>(std::_Deque_iterator<Customer, Customer&, Customer*> const&, std::_Deque_iterator<Customer, Customer&, Customer*> const&) [63]
+   0.40       0.03  std::basic_istream<char, std::char_traits<char> >::sentry::sentry(std::basic_istream<char, std::char_traits<char> >&, bool) [68]
+   0.32       0.02  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) [12]
+   0.32       0.02  std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::_S_buffer_size() [44]
+   0.32       0.02  Customer::getName() [56]
+   0.32       0.02  std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::_M_set_node(std::deque<Customer*, std::allocator<Customer*> >**) [62]
+   0.32       0.02  _ZN9__gnu_cxx13new_allocatorIP8CustomerE9constructIS2_JS2_EEEvPT_DpOT0_ [65]
+   0.32       0.02  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_safe(unsigned long, unsigned long, char const*, unsigned long) [69]
+   0.32       0.02  memchr [70]
+   0.32       0.02  std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator*() const [71]
+   0.32       0.02  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) [72]
+   0.32       0.02  std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::_Deque_iterator(std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*> const&) [73]
+   0.32       0.02  brk [76]
+   0.24       0.02  operator new(unsigned long, void*) [78]
+   0.24       0.02  @{libstdc++.so.6.0.18+773382} [79]
+   0.24       0.02  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&&) [80]
+   0.16       0.01  void std::_Destroy<Customer*, Customer>(Customer*, Customer*, std::allocator<Customer>&) [21]
+   0.16       0.01  std::basic_ios<char, std::char_traits<char> >::eof() const [82]
+   0.16       0.01  Customer&& std::forward<Customer>(std::remove_reference<Customer>::type&) [86]
+   0.16       0.01  Customer*&& std::forward<Customer*>(std::remove_reference<Customer*>::type&) [87]
+   0.16       0.01  bool std::operator==<Customer, Customer&, Customer*>(std::_Deque_iterator<Customer, Customer&, Customer*> const&, std::_Deque_iterator<Customer, Customer&, Customer*> const&) [88]
+   0.16       0.01  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, unsigned long) [89]
+   0.16       0.01  strlen [90]
+   0.16       0.01  memcpy [91]
+   0.16       0.01  @{libstdc++.so.6.0.18+773416} [94]
+   0.16       0.01  operator new(unsigned long) [96]
+   0.08       0.01  std::basic_filebuf<char, std::char_traits<char> >::underflow() [36]
+   0.08       0.01  _ZNSt5dequeI8CustomerSaIS0_EE16_M_push_back_auxIJS0_EEEvDpOT_ [47]
+   0.08       0.01  _ZN9__gnu_cxx13new_allocatorI8CustomerE9constructIS1_JS1_EEEvPT_DpOT0_ [55]
+   0.08       0.01  _ZNSt5dequeIP8CustomerSaIS1_EE16_M_push_back_auxIJS1_EEEvDpOT_ [64]
+   0.08       0.01  std::_Deque_iterator<Customer, Customer&, Customer*>::_M_set_node(Customer**) [77]
+   0.08       0.01  std::_Deque_iterator<Customer, Customer&, Customer*>::operator++() [83]
+   0.08       0.01  std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [103]
+   0.08       0.01  std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&) [104]
+   0.08       0.01  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::assign(char const*, unsigned long) [105]
+   0.08       0.01  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::append(char const*, unsigned long) [106]
+   0.08       0.01  @{libstdc++.so.6.0.18+773425} [107]
+   0.08       0.01  malloc [108]
+   0.08       0.01  std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep::_M_destroy(std::allocator<char> const&) [109]
+   0.08       0.01  operator delete(void*) [110]
+   0.08       0.01  free [111]
+   0.08       0.01  operator delete(void*) [112]
+   0.00       0.00  <spontaneous> [1]
+
+
+----------------------------------------------------------------------
+Call tree profile (cumulative)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Rank    % total       Self       Self / Children   Function
+[1]       100.0       7.51       0.00 / 7.51       <spontaneous>
+          100.0  .........       7.51 / 7.51         _start [2]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+          100.0  .........       7.51 / 7.51         <spontaneous> [1]
+[2]       100.0       7.51       0.00 / 7.51       _start
+          100.0  .........       7.51 / 7.51         __libc_start_main [3]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+          100.0  .........       7.51 / 7.51         _start [2]
+[3]       100.0       7.51       0.00 / 7.51       __libc_start_main
+           90.0  .........       6.76 / 6.76         main [4]
+           10.0  .........       0.75 / 0.75         exit [15]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+           90.0  .........       6.76 / 7.51         __libc_start_main [3]
+[4]        90.0       6.76       0.00 / 6.76       main
+           75.8  .........       5.69 / 5.69         readCustomersData(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) [5]
+           14.2  .........       1.07 / 1.07         fillCustomerDataAlphabetic() [14]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+           75.8  .........       5.69 / 6.76         main [4]
+[5]        75.8       5.69       0.03 / 5.66       readCustomersData(std::basic_string<char, std::char_traits<char>, std::allocator<char> >)
+           56.6  .........       4.25 / 4.25         fillCustomerData(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) [6]
+            9.6  .........       0.72 / 0.72         std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [17]
+            3.6  .........       0.27 / 0.27         _ZNSt5dequeI8CustomerSaIS0_EE12emplace_backIJS0_EEEvDpOT_ [32]
+            3.1  .........       0.23 / 0.23         Customer::Customer(unsigned int, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [34]
+            1.1  .........       0.08 / 0.64         Customer::~Customer() [18]
+            0.9  .........       0.07 / 0.20         std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::operator[](unsigned long) [41]
+            0.2  .........       0.01 / 0.09         _init [54]
+            0.2  .........       0.01 / 0.01         std::basic_ios<char, std::char_traits<char> >::eof() const [82]
+            0.1  .........       0.01 / 0.01         std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&) [104]
+            0.1  .........       0.01 / 0.01         std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [103]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+           56.6  .........       4.25 / 5.69         readCustomersData(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) [5]
+[6]        56.6       4.25       0.10 / 4.16       fillCustomerData(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&)
+           27.6  .........       2.08 / 2.08         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_safe(unsigned long, unsigned long, char const*, unsigned long) [7]
+           18.2  .........       1.37 / 1.37         strtok [11]
+            3.5  .........       0.26 / 0.26         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator=(char const*) [33]
+            2.6  .........       0.20 / 0.20         __strcpy_ssse3 [43]
+            1.8  .........       0.14 / 0.20         std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::operator[](unsigned long) [41]
+            0.7  .........       0.05 / 0.05         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::assign(char const*, unsigned long) [60]
+            0.4  .........       0.03 / 0.09         _init [54]
+            0.3  .........       0.02 / 0.02         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_safe(unsigned long, unsigned long, char const*, unsigned long) [69]
+            0.1  .........       0.01 / 0.01         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::assign(char const*, unsigned long) [105]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+           27.6  .........       2.08 / 4.25         fillCustomerData(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) [6]
+[7]        27.6       2.08       0.14 / 1.93       std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_safe(unsigned long, unsigned long, char const*, unsigned long)
+           23.4  .........       1.76 / 1.78         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, unsigned long) [8]
+            2.2  .........       0.16 / 0.32         memcpy [31]
+            0.2  .........       0.01 / 0.01         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, unsigned long) [89]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.3  .........       0.02 / 0.72         std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [17]
+           23.4  .........       1.76 / 2.08         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_safe(unsigned long, unsigned long, char const*, unsigned long) [7]
+[8]        23.7       1.78       0.20 / 1.58       std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, unsigned long)
+           18.1  .........       1.36 / 1.36         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) [12]
+            2.4  .........       0.18 / 0.41         @{libstdc++.so.6.0.18+773403} [28]
+            0.3  .........       0.02 / 0.02         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) [72]
+            0.2  .........       0.01 / 0.02         @{libstdc++.so.6.0.18+773382} [79]
+            0.1  .........       0.01 / 0.01         @{libstdc++.so.6.0.18+773416} [94]
+            0.1  .........       0.01 / 0.01         @{libstdc++.so.6.0.18+773425} [107]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.5  .........       0.04 / 0.04         __gnu_cxx::new_allocator<Customer*>::allocate(unsigned long, void const*) [67]
+            1.4  .........       0.10 / 0.11         __gnu_cxx::new_allocator<Customer>::allocate(unsigned long, void const*) [49]
+           17.6  .........       1.32 / 1.36         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) [12]
+[9]        19.4       1.46       0.06 / 1.40       operator new(unsigned long)
+           18.5  .........       1.39 / 1.39         malloc [10]
+            0.1  .........       0.01 / 0.01         malloc [108]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+           18.5  .........       1.39 / 1.46         operator new(unsigned long) [9]
+[10]       18.5       1.39       0.15 / 1.24       malloc
+           16.5  .........       1.24 / 1.24         _int_malloc [13]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Rank    % total       Self       Self / Children   Function
+           18.2  .........       1.37 / 4.25         fillCustomerData(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) [6]
+[11]       18.2       1.37       1.37 / 0.00       strtok
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+           18.1  .........       1.36 / 1.78         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, unsigned long) [8]
+[12]       18.1       1.36       0.02 / 1.33       std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&)
+           17.6  .........       1.32 / 1.46         operator new(unsigned long) [9]
+            0.2  .........       0.01 / 0.01         operator new(unsigned long) [96]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+           16.5  .........       1.24 / 1.39         malloc [10]
+[13]       16.5       1.24       1.22 / 0.02       _int_malloc
+            0.3  .........       0.02 / 0.02         __default_morecore [74]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+           14.2  .........       1.07 / 6.76         main [4]
+[14]       14.2       1.07       0.30 / 0.77       fillCustomerDataAlphabetic()
+            6.3  .........       0.47 / 0.47         std::deque<std::deque<Customer*, std::allocator<Customer*> >, std::allocator<std::deque<Customer*, std::allocator<Customer*> > > >::operator[](unsigned long) [26]
+            2.2  .........       0.17 / 0.17         _ZNSt5dequeIP8CustomerSaIS1_EE12emplace_backIJS1_EEEvDpOT_ [46]
+            1.0  .........       0.07 / 0.07         Customer::getName() [56]
+            0.6  .........       0.04 / 0.04         bool std::operator!=<Customer, Customer&, Customer*>(std::_Deque_iterator<Customer, Customer&, Customer*> const&, std::_Deque_iterator<Customer, Customer&, Customer*> const&) [63]
+            0.2  .........       0.01 / 0.01         std::_Deque_iterator<Customer, Customer&, Customer*>::operator++() [83]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+           10.0  .........       0.75 / 7.51         __libc_start_main [3]
+[15]       10.0       0.75       0.00 / 0.75       exit
+            9.8  .........       0.74 / 0.74         std::deque<Customer, std::allocator<Customer> >::~deque() [16]
+            0.2  .........       0.01 / 0.01         std::deque<std::deque<Customer*, std::allocator<Customer*> >, std::allocator<std::deque<Customer*, std::allocator<Customer*> > > >::~deque() [81]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            9.8  .........       0.74 / 0.75         exit [15]
+[16]        9.8       0.74       0.00 / 0.74       std::deque<Customer, std::allocator<Customer> >::~deque()
+            8.5  .........       0.64 / 0.64         std::deque<Customer, std::allocator<Customer> >::_M_destroy_data(std::_Deque_iterator<Customer, Customer&, Customer*>, std::_Deque_iterator<Customer, Customer&, Customer*>, std::allocator<Customer> const&) [19]
+            1.4  .........       0.10 / 0.10         std::_Deque_base<Customer, std::allocator<Customer> >::~_Deque_base() [50]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            9.6  .........       0.72 / 5.69         readCustomersData(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) [5]
+[17]        9.6       0.72       0.13 / 0.59       std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char)
+            3.0  .........       0.22 / 0.22         std::basic_filebuf<char, std::char_traits<char> >::underflow() [36]
+            2.9  .........       0.22 / 0.22         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::append(char const*, unsigned long) [37]
+            1.0  .........       0.07 / 0.07         memchr [57]
+            0.4  .........       0.03 / 0.03         std::basic_istream<char, std::char_traits<char> >::sentry::sentry(std::basic_istream<char, std::char_traits<char> >&, bool) [68]
+            0.3  .........       0.02 / 1.78         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, unsigned long) [8]
+            0.3  .........       0.02 / 0.02         memchr [70]
+            0.1  .........       0.01 / 0.01         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::append(char const*, unsigned long) [106]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            1.1  .........       0.08 / 5.69         readCustomersData(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) [5]
+            7.4  .........       0.56 / 0.59         void std::_Destroy<Customer>(Customer*) [24]
+[18]        8.5       0.64       0.09 / 0.55       Customer::~Customer()
+            7.1  .........       0.53 / 0.53         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() [25]
+            0.2  .........       0.02 / 0.09         _init [54]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            8.5  .........       0.64 / 0.74         std::deque<Customer, std::allocator<Customer> >::~deque() [16]
+[19]        8.5       0.64       0.00 / 0.64       std::deque<Customer, std::allocator<Customer> >::_M_destroy_data(std::_Deque_iterator<Customer, Customer&, Customer*>, std::_Deque_iterator<Customer, Customer&, Customer*>, std::allocator<Customer> const&)
+            8.5  .........       0.64 / 0.64         std::deque<Customer, std::allocator<Customer> >::_M_destroy_data_aux(std::_Deque_iterator<Customer, Customer&, Customer*>, std::_Deque_iterator<Customer, Customer&, Customer*>) [20]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            8.5  .........       0.64 / 0.64         std::deque<Customer, std::allocator<Customer> >::_M_destroy_data(std::_Deque_iterator<Customer, Customer&, Customer*>, std::_Deque_iterator<Customer, Customer&, Customer*>, std::allocator<Customer> const&) [19]
+[20]        8.5       0.64       0.00 / 0.64       std::deque<Customer, std::allocator<Customer> >::_M_destroy_data_aux(std::_Deque_iterator<Customer, Customer&, Customer*>, std::_Deque_iterator<Customer, Customer&, Customer*>)
+            8.5  .........       0.64 / 0.64         void std::_Destroy<Customer*, Customer>(Customer*, Customer*, std::allocator<Customer>&) [21]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Rank    % total       Self       Self / Children   Function
+            8.5  .........       0.64 / 0.64         std::deque<Customer, std::allocator<Customer> >::_M_destroy_data_aux(std::_Deque_iterator<Customer, Customer&, Customer*>, std::_Deque_iterator<Customer, Customer&, Customer*>) [20]
+[21]        8.5       0.64       0.01 / 0.62       void std::_Destroy<Customer*, Customer>(Customer*, Customer*, std::allocator<Customer>&)
+            8.3  .........       0.62 / 0.62         void std::_Destroy<Customer*>(Customer*, Customer*) [22]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            8.3  .........       0.62 / 0.64         void std::_Destroy<Customer*, Customer>(Customer*, Customer*, std::allocator<Customer>&) [21]
+[22]        8.3       0.62       0.00 / 0.62       void std::_Destroy<Customer*>(Customer*, Customer*)
+            8.3  .........       0.62 / 0.62         void std::_Destroy_aux<false>::__destroy<Customer*>(Customer*, Customer*) [23]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            8.3  .........       0.62 / 0.62         void std::_Destroy<Customer*>(Customer*, Customer*) [22]
+[23]        8.3       0.62       0.04 / 0.59       void std::_Destroy_aux<false>::__destroy<Customer*>(Customer*, Customer*)
+            7.8  .........       0.59 / 0.59         void std::_Destroy<Customer>(Customer*) [24]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            7.8  .........       0.59 / 0.62         void std::_Destroy_aux<false>::__destroy<Customer*>(Customer*, Customer*) [23]
+[24]        7.8       0.59       0.03 / 0.56       void std::_Destroy<Customer>(Customer*)
+            7.4  .........       0.56 / 0.64         Customer::~Customer() [18]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            7.1  .........       0.53 / 0.64         Customer::~Customer() [18]
+[25]        7.1       0.53       0.08 / 0.46       std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string()
+            3.0  .........       0.23 / 0.41         @{libstdc++.so.6.0.18+773403} [28]
+            2.2  .........       0.16 / 0.23         _int_free [35]
+            0.4  .........       0.03 / 0.07         free [59]
+            0.1  .........       0.01 / 0.02         @{libstdc++.so.6.0.18+773382} [79]
+            0.1  .........       0.01 / 0.01         @{libstdc++.so.6.0.18+773416} [94]
+            0.1  .........       0.01 / 0.01         free [111]
+            0.1  .........       0.01 / 0.01         operator delete(void*) [112]
+            0.1  .........       0.01 / 0.01         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep::_M_destroy(std::allocator<char> const&) [109]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            6.3  .........       0.47 / 1.07         fillCustomerDataAlphabetic() [14]
+[26]        6.3       0.47       0.03 / 0.44       std::deque<std::deque<Customer*, std::allocator<Customer*> >, std::allocator<std::deque<Customer*, std::allocator<Customer*> > > >::operator[](unsigned long)
+            5.9  .........       0.44 / 0.44         std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator[](long) const [27]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            5.9  .........       0.44 / 0.47         std::deque<std::deque<Customer*, std::allocator<Customer*> >, std::allocator<std::deque<Customer*, std::allocator<Customer*> > > >::operator[](unsigned long) [26]
+[27]        5.9       0.44       0.04 / 0.41       std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator[](long) const
+            5.1  .........       0.38 / 0.38         std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator+(long) const [29]
+            0.3  .........       0.02 / 0.02         std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator*() const [71]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            2.4  .........       0.18 / 1.78         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, unsigned long) [8]
+            3.0  .........       0.23 / 0.53         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() [25]
+[28]        5.4       0.41       0.41 / 0.00       @{libstdc++.so.6.0.18+773403}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            5.1  .........       0.38 / 0.44         std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator[](long) const [27]
+[29]        5.1       0.38       0.03 / 0.35       std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator+(long) const
+            4.4  .........       0.33 / 0.33         std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator+=(long) [30]
+            0.3  .........       0.02 / 0.02         std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::_Deque_iterator(std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*> const&) [73]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            4.4  .........       0.33 / 0.38         std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator+(long) const [29]
+[30]        4.4       0.33       0.11 / 0.22       std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator+=(long)
+            2.3  .........       0.17 / 0.20         std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::_S_buffer_size() [44]
+            0.6  .........       0.05 / 0.05         std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::_M_set_node(std::deque<Customer*, std::allocator<Customer*> >**) [62]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Rank    % total       Self       Self / Children   Function
+            2.2  .........       0.16 / 0.22         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::append(char const*, unsigned long) [37]
+            2.2  .........       0.16 / 2.08         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_safe(unsigned long, unsigned long, char const*, unsigned long) [7]
+[31]        4.3       0.32       0.32 / 0.00       memcpy
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            3.6  .........       0.27 / 5.69         readCustomersData(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) [5]
+[32]        3.6       0.27       0.04 / 0.23       _ZNSt5dequeI8CustomerSaIS0_EE12emplace_backIJS0_EEEvDpOT_
+            1.9  .........       0.14 / 0.14         _ZNSt5dequeI8CustomerSaIS0_EE16_M_push_back_auxIJS0_EEEvDpOT_ [47]
+            1.0  .........       0.08 / 0.08         _ZN9__gnu_cxx13new_allocatorI8CustomerE9constructIS1_JS1_EEEvPT_DpOT0_ [55]
+            0.1  .........       0.01 / 0.01         Customer&& std::forward<Customer>(std::remove_reference<Customer>::type&) [86]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            3.5  .........       0.26 / 4.25         fillCustomerData(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) [6]
+[33]        3.5       0.26       0.04 / 0.22       std::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator=(char const*)
+            2.8  .........       0.21 / 0.21         __strlen_sse42 [40]
+            0.2  .........       0.01 / 0.01         strlen [90]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            3.1  .........       0.23 / 5.69         readCustomersData(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) [5]
+[34]        3.1       0.23       0.05 / 0.18       Customer::Customer(unsigned int, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+            2.3  .........       0.17 / 0.17         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [45]
+            0.1  .........       0.01 / 0.09         _init [54]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.1  .........       0.01 / 0.01         __gnu_cxx::new_allocator<Customer*>::deallocate(Customer**, unsigned long) [113]
+            0.9  .........       0.07 / 0.10         __gnu_cxx::new_allocator<Customer>::deallocate(Customer*, unsigned long) [53]
+            2.2  .........       0.16 / 0.53         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() [25]
+[35]        3.1       0.23       0.23 / 0.00       _int_free
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            3.0  .........       0.22 / 0.72         std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [17]
+[36]        3.0       0.22       0.01 / 0.22       std::basic_filebuf<char, std::char_traits<char> >::underflow()
+            2.9  .........       0.22 / 0.22         std::__basic_file<char>::xsgetn(char*, long) [38]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            2.9  .........       0.22 / 0.72         std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [17]
+[37]        2.9       0.22       0.04 / 0.17       std::basic_string<char, std::char_traits<char>, std::allocator<char> >::append(char const*, unsigned long)
+            2.2  .........       0.16 / 0.32         memcpy [31]
+            0.2  .........       0.01 / 0.01         memcpy [91]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            2.9  .........       0.22 / 0.22         std::basic_filebuf<char, std::char_traits<char> >::underflow() [36]
+[38]        2.9       0.22       0.00 / 0.22       std::__basic_file<char>::xsgetn(char*, long)
+            2.9  .........       0.22 / 0.22         __read_nocancel [39]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            2.9  .........       0.22 / 0.22         std::__basic_file<char>::xsgetn(char*, long) [38]
+[39]        2.9       0.22       0.22 / 0.00       __read_nocancel
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            2.8  .........       0.21 / 0.26         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator=(char const*) [33]
+[40]        2.8       0.21       0.21 / 0.00       __strlen_sse42
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Rank    % total       Self       Self / Children   Function
+            0.9  .........       0.07 / 5.69         readCustomersData(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) [5]
+            1.8  .........       0.14 / 4.25         fillCustomerData(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) [6]
+[41]        2.7       0.20       0.20 / 0.00       std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::operator[](unsigned long)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.1  .........       0.01 / 0.01         std::_Deque_base<Customer*, std::allocator<Customer*> >::_M_deallocate_node(Customer**) [102]
+            0.2  .........       0.01 / 0.01         std::_Deque_iterator<Customer, Customer&, Customer*>::_S_buffer_size() [92]
+            0.2  .........       0.01 / 0.12         std::_Deque_base<Customer, std::allocator<Customer> >::_M_allocate_node() [48]
+            2.3  .........       0.17 / 0.20         std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::_S_buffer_size() [44]
+[42]        2.7       0.20       0.20 / 0.00       std::__deque_buf_size(unsigned long)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            2.6  .........       0.20 / 4.25         fillCustomerData(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) [6]
+[43]        2.6       0.20       0.20 / 0.00       __strcpy_ssse3
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.3  .........       0.02 / 0.05         std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::_M_set_node(std::deque<Customer*, std::allocator<Customer*> >**) [62]
+            2.3  .........       0.17 / 0.33         std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator+=(long) [30]
+[44]        2.6       0.20       0.02 / 0.17       std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::_S_buffer_size()
+            2.3  .........       0.17 / 0.20         std::__deque_buf_size(unsigned long) [42]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            2.3  .........       0.17 / 0.23         Customer::Customer(unsigned int, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [34]
+[45]        2.3       0.17       0.17 / 0.00       std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            2.2  .........       0.17 / 1.07         fillCustomerDataAlphabetic() [14]
+[46]        2.2       0.17       0.08 / 0.09       _ZNSt5dequeIP8CustomerSaIS1_EE12emplace_backIJS1_EEEvDpOT_
+            0.6  .........       0.04 / 0.04         _ZNSt5dequeIP8CustomerSaIS1_EE16_M_push_back_auxIJS1_EEEvDpOT_ [64]
+            0.5  .........       0.04 / 0.04         _ZN9__gnu_cxx13new_allocatorIP8CustomerE9constructIS2_JS2_EEEvPT_DpOT0_ [65]
+            0.2  .........       0.01 / 0.01         Customer*&& std::forward<Customer*>(std::remove_reference<Customer*>::type&) [87]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            1.9  .........       0.14 / 0.27         _ZNSt5dequeI8CustomerSaIS0_EE12emplace_backIJS0_EEEvDpOT_ [32]
+[47]        1.9       0.14       0.01 / 0.14       _ZNSt5dequeI8CustomerSaIS0_EE16_M_push_back_auxIJS0_EEEvDpOT_
+            1.6  .........       0.12 / 0.12         std::_Deque_base<Customer, std::allocator<Customer> >::_M_allocate_node() [48]
+            0.2  .........       0.01 / 0.02         std::_Deque_iterator<Customer, Customer&, Customer*>::_M_set_node(Customer**) [77]
+            0.1  .........       0.01 / 0.08         _ZN9__gnu_cxx13new_allocatorI8CustomerE9constructIS1_JS1_EEEvPT_DpOT0_ [55]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            1.6  .........       0.12 / 0.14         _ZNSt5dequeI8CustomerSaIS0_EE16_M_push_back_auxIJS0_EEEvDpOT_ [47]
+[48]        1.6       0.12       0.00 / 0.12       std::_Deque_base<Customer, std::allocator<Customer> >::_M_allocate_node()
+            1.4  .........       0.11 / 0.11         __gnu_cxx::new_allocator<Customer>::allocate(unsigned long, void const*) [49]
+            0.2  .........       0.01 / 0.20         std::__deque_buf_size(unsigned long) [42]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            1.4  .........       0.11 / 0.12         std::_Deque_base<Customer, std::allocator<Customer> >::_M_allocate_node() [48]
+[49]        1.4       0.11       0.00 / 0.11       __gnu_cxx::new_allocator<Customer>::allocate(unsigned long, void const*)
+            1.4  .........       0.10 / 1.46         operator new(unsigned long) [9]
+            0.1  .........       0.01 / 0.09         _init [54]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            1.4  .........       0.10 / 0.74         std::deque<Customer, std::allocator<Customer> >::~deque() [16]
+[50]        1.4       0.10       0.00 / 0.10       std::_Deque_base<Customer, std::allocator<Customer> >::~_Deque_base()
+            1.4  .........       0.10 / 0.10         std::_Deque_base<Customer, std::allocator<Customer> >::_M_destroy_nodes(Customer**, Customer**) [51]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Rank    % total       Self       Self / Children   Function
+            1.4  .........       0.10 / 0.10         std::_Deque_base<Customer, std::allocator<Customer> >::~_Deque_base() [50]
+[51]        1.4       0.10       0.00 / 0.10       std::_Deque_base<Customer, std::allocator<Customer> >::_M_destroy_nodes(Customer**, Customer**)
+            1.4  .........       0.10 / 0.10         std::_Deque_base<Customer, std::allocator<Customer> >::_M_deallocate_node(Customer*) [52]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            1.4  .........       0.10 / 0.10         std::_Deque_base<Customer, std::allocator<Customer> >::_M_destroy_nodes(Customer**, Customer**) [51]
+[52]        1.4       0.10       0.00 / 0.10       std::_Deque_base<Customer, std::allocator<Customer> >::_M_deallocate_node(Customer*)
+            1.4  .........       0.10 / 0.10         __gnu_cxx::new_allocator<Customer>::deallocate(Customer*, unsigned long) [53]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            1.4  .........       0.10 / 0.10         std::_Deque_base<Customer, std::allocator<Customer> >::_M_deallocate_node(Customer*) [52]
+[53]        1.4       0.10       0.00 / 0.10       __gnu_cxx::new_allocator<Customer>::deallocate(Customer*, unsigned long)
+            0.9  .........       0.07 / 0.23         _int_free [35]
+            0.5  .........       0.04 / 0.07         free [59]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.1  .........       0.01 / 0.11         __gnu_cxx::new_allocator<Customer>::allocate(unsigned long, void const*) [49]
+            0.1  .........       0.01 / 0.23         Customer::Customer(unsigned int, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&) [34]
+            0.2  .........       0.01 / 5.69         readCustomersData(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) [5]
+            0.2  .........       0.02 / 0.07         Customer::Customer(Customer&&) [58]
+            0.2  .........       0.02 / 0.64         Customer::~Customer() [18]
+            0.4  .........       0.03 / 4.25         fillCustomerData(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) [6]
+[54]        1.2       0.09       0.09 / 0.00       _init
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.1  .........       0.01 / 0.14         _ZNSt5dequeI8CustomerSaIS0_EE16_M_push_back_auxIJS0_EEEvDpOT_ [47]
+            1.0  .........       0.08 / 0.27         _ZNSt5dequeI8CustomerSaIS0_EE12emplace_backIJS0_EEEvDpOT_ [32]
+[55]        1.1       0.08       0.01 / 0.08       _ZN9__gnu_cxx13new_allocatorI8CustomerE9constructIS1_JS1_EEEvPT_DpOT0_
+            0.9  .........       0.07 / 0.07         Customer::Customer(Customer&&) [58]
+            0.1  .........       0.01 / 0.02         operator new(unsigned long, void*) [78]
+            0.1  .........       0.01 / 0.01         Customer&& std::forward<Customer>(std::remove_reference<Customer>::type&) [86]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            1.0  .........       0.07 / 1.07         fillCustomerDataAlphabetic() [14]
+[56]        1.0       0.07       0.02 / 0.05       Customer::getName()
+            0.6  .........       0.05 / 0.05         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::c_str() const [61]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            1.0  .........       0.07 / 0.72         std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [17]
+[57]        1.0       0.07       0.07 / 0.00       memchr
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.9  .........       0.07 / 0.08         _ZN9__gnu_cxx13new_allocatorI8CustomerE9constructIS1_JS1_EEEvPT_DpOT0_ [55]
+[58]        0.9       0.07       0.03 / 0.04       Customer::Customer(Customer&&)
+            0.2  .........       0.02 / 0.09         _init [54]
+            0.2  .........       0.02 / 0.02         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&&) [80]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.4  .........       0.03 / 0.53         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() [25]
+            0.5  .........       0.04 / 0.10         __gnu_cxx::new_allocator<Customer>::deallocate(Customer*, unsigned long) [53]
+[59]        0.9       0.07       0.07 / 0.00       free
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.7  .........       0.05 / 4.25         fillCustomerData(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) [6]
+[60]        0.7       0.05       0.05 / 0.00       std::basic_string<char, std::char_traits<char>, std::allocator<char> >::assign(char const*, unsigned long)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Rank    % total       Self       Self / Children   Function
+            0.6  .........       0.05 / 0.07         Customer::getName() [56]
+[61]        0.6       0.05       0.05 / 0.00       std::basic_string<char, std::char_traits<char>, std::allocator<char> >::c_str() const
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.6  .........       0.05 / 0.33         std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator+=(long) [30]
+[62]        0.6       0.05       0.02 / 0.02       std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::_M_set_node(std::deque<Customer*, std::allocator<Customer*> >**)
+            0.3  .........       0.02 / 0.20         std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::_S_buffer_size() [44]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.6  .........       0.04 / 1.07         fillCustomerDataAlphabetic() [14]
+[63]        0.6       0.04       0.03 / 0.01       bool std::operator!=<Customer, Customer&, Customer*>(std::_Deque_iterator<Customer, Customer&, Customer*> const&, std::_Deque_iterator<Customer, Customer&, Customer*> const&)
+            0.2  .........       0.01 / 0.01         bool std::operator==<Customer, Customer&, Customer*>(std::_Deque_iterator<Customer, Customer&, Customer*> const&, std::_Deque_iterator<Customer, Customer&, Customer*> const&) [88]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.6  .........       0.04 / 0.17         _ZNSt5dequeIP8CustomerSaIS1_EE12emplace_backIJS1_EEEvDpOT_ [46]
+[64]        0.6       0.04       0.01 / 0.04       _ZNSt5dequeIP8CustomerSaIS1_EE16_M_push_back_auxIJS1_EEEvDpOT_
+            0.5  .........       0.04 / 0.04         std::_Deque_base<Customer*, std::allocator<Customer*> >::_M_allocate_node() [66]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.5  .........       0.04 / 0.17         _ZNSt5dequeIP8CustomerSaIS1_EE12emplace_backIJS1_EEEvDpOT_ [46]
+[65]        0.5       0.04       0.02 / 0.01       _ZN9__gnu_cxx13new_allocatorIP8CustomerE9constructIS2_JS2_EEEvPT_DpOT0_
+            0.2  .........       0.01 / 0.02         operator new(unsigned long, void*) [78]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.5  .........       0.04 / 0.04         _ZNSt5dequeIP8CustomerSaIS1_EE16_M_push_back_auxIJS1_EEEvDpOT_ [64]
+[66]        0.5       0.04       0.00 / 0.04       std::_Deque_base<Customer*, std::allocator<Customer*> >::_M_allocate_node()
+            0.5  .........       0.04 / 0.04         __gnu_cxx::new_allocator<Customer*>::allocate(unsigned long, void const*) [67]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.5  .........       0.04 / 0.04         std::_Deque_base<Customer*, std::allocator<Customer*> >::_M_allocate_node() [66]
+[67]        0.5       0.04       0.00 / 0.04       __gnu_cxx::new_allocator<Customer*>::allocate(unsigned long, void const*)
+            0.5  .........       0.04 / 1.46         operator new(unsigned long) [9]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.4  .........       0.03 / 0.72         std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [17]
+[68]        0.4       0.03       0.03 / 0.00       std::basic_istream<char, std::char_traits<char> >::sentry::sentry(std::basic_istream<char, std::char_traits<char> >&, bool)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.3  .........       0.02 / 4.25         fillCustomerData(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) [6]
+[69]        0.3       0.02       0.02 / 0.00       std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_safe(unsigned long, unsigned long, char const*, unsigned long)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.3  .........       0.02 / 0.72         std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [17]
+[70]        0.3       0.02       0.02 / 0.00       memchr
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Rank    % total       Self       Self / Children   Function
+            0.3  .........       0.02 / 0.44         std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator[](long) const [27]
+[71]        0.3       0.02       0.02 / 0.00       std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator*() const
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.3  .........       0.02 / 1.78         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, unsigned long) [8]
+[72]        0.3       0.02       0.02 / 0.00       std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.3  .........       0.02 / 0.38         std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::operator+(long) const [29]
+[73]        0.3       0.02       0.02 / 0.00       std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>::_Deque_iterator(std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*> const&)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.3  .........       0.02 / 1.24         _int_malloc [13]
+[74]        0.3       0.02       0.00 / 0.02       __default_morecore
+            0.3  .........       0.02 / 0.02         sbrk [75]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.3  .........       0.02 / 0.02         __default_morecore [74]
+[75]        0.3       0.02       0.00 / 0.02       sbrk
+            0.3  .........       0.02 / 0.02         brk [76]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.3  .........       0.02 / 0.02         sbrk [75]
+[76]        0.3       0.02       0.02 / 0.00       brk
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.1  .........       0.01 / 0.01         std::_Deque_iterator<Customer, Customer&, Customer*>::operator++() [83]
+            0.2  .........       0.01 / 0.14         _ZNSt5dequeI8CustomerSaIS0_EE16_M_push_back_auxIJS0_EEEvDpOT_ [47]
+[77]        0.2       0.02       0.01 / 0.01       std::_Deque_iterator<Customer, Customer&, Customer*>::_M_set_node(Customer**)
+            0.2  .........       0.01 / 0.01         std::_Deque_iterator<Customer, Customer&, Customer*>::_S_buffer_size() [92]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.1  .........       0.01 / 0.08         _ZN9__gnu_cxx13new_allocatorI8CustomerE9constructIS1_JS1_EEEvPT_DpOT0_ [55]
+            0.2  .........       0.01 / 0.04         _ZN9__gnu_cxx13new_allocatorIP8CustomerE9constructIS2_JS2_EEEvPT_DpOT0_ [65]
+[78]        0.2       0.02       0.02 / 0.00       operator new(unsigned long, void*)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.1  .........       0.01 / 0.53         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() [25]
+            0.2  .........       0.01 / 1.78         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, unsigned long) [8]
+[79]        0.2       0.02       0.02 / 0.00       @{libstdc++.so.6.0.18+773382}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.2  .........       0.02 / 0.07         Customer::Customer(Customer&&) [58]
+[80]        0.2       0.02       0.02 / 0.00       std::basic_string<char, std::char_traits<char>, std::allocator<char> >::basic_string(std::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Rank    % total       Self       Self / Children   Function
+            0.2  .........       0.01 / 0.75         exit [15]
+[81]        0.2       0.01       0.00 / 0.01       std::deque<std::deque<Customer*, std::allocator<Customer*> >, std::allocator<std::deque<Customer*, std::allocator<Customer*> > > >::~deque()
+            0.2  .........       0.01 / 0.01         std::deque<std::deque<Customer*, std::allocator<Customer*> >, std::allocator<std::deque<Customer*, std::allocator<Customer*> > > >::_M_destroy_data(std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>, std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>, std::allocator<std::deque<Customer*, std::allocator<Customer*> > > const&) [84]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.2  .........       0.01 / 5.69         readCustomersData(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) [5]
+[82]        0.2       0.01       0.01 / 0.00       std::basic_ios<char, std::char_traits<char> >::eof() const
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.2  .........       0.01 / 1.07         fillCustomerDataAlphabetic() [14]
+[83]        0.2       0.01       0.01 / 0.01       std::_Deque_iterator<Customer, Customer&, Customer*>::operator++()
+            0.1  .........       0.01 / 0.02         std::_Deque_iterator<Customer, Customer&, Customer*>::_M_set_node(Customer**) [77]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.2  .........       0.01 / 0.01         std::deque<std::deque<Customer*, std::allocator<Customer*> >, std::allocator<std::deque<Customer*, std::allocator<Customer*> > > >::~deque() [81]
+[84]        0.2       0.01       0.00 / 0.01       std::deque<std::deque<Customer*, std::allocator<Customer*> >, std::allocator<std::deque<Customer*, std::allocator<Customer*> > > >::_M_destroy_data(std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>, std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>, std::allocator<std::deque<Customer*, std::allocator<Customer*> > > const&)
+            0.2  .........       0.01 / 0.01         std::deque<std::deque<Customer*, std::allocator<Customer*> >, std::allocator<std::deque<Customer*, std::allocator<Customer*> > > >::_M_destroy_data_aux(std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>, std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>) [85]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.2  .........       0.01 / 0.01         std::deque<std::deque<Customer*, std::allocator<Customer*> >, std::allocator<std::deque<Customer*, std::allocator<Customer*> > > >::_M_destroy_data(std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>, std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>, std::allocator<std::deque<Customer*, std::allocator<Customer*> > > const&) [84]
+[85]        0.2       0.01       0.00 / 0.01       std::deque<std::deque<Customer*, std::allocator<Customer*> >, std::allocator<std::deque<Customer*, std::allocator<Customer*> > > >::_M_destroy_data_aux(std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>, std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>)
+            0.2  .........       0.01 / 0.01         void std::_Destroy<std::deque<Customer*, std::allocator<Customer*> >*, std::deque<Customer*, std::allocator<Customer*> > >(std::deque<Customer*, std::allocator<Customer*> >*, std::deque<Customer*, std::allocator<Customer*> >*, std::allocator<std::deque<Customer*, std::allocator<Customer*> > >&) [93]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.1  .........       0.01 / 0.08         _ZN9__gnu_cxx13new_allocatorI8CustomerE9constructIS1_JS1_EEEvPT_DpOT0_ [55]
+            0.1  .........       0.01 / 0.27         _ZNSt5dequeI8CustomerSaIS0_EE12emplace_backIJS0_EEEvDpOT_ [32]
+[86]        0.2       0.01       0.01 / 0.00       Customer&& std::forward<Customer>(std::remove_reference<Customer>::type&)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.2  .........       0.01 / 0.17         _ZNSt5dequeIP8CustomerSaIS1_EE12emplace_backIJS1_EEEvDpOT_ [46]
+[87]        0.2       0.01       0.01 / 0.00       Customer*&& std::forward<Customer*>(std::remove_reference<Customer*>::type&)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.2  .........       0.01 / 0.04         bool std::operator!=<Customer, Customer&, Customer*>(std::_Deque_iterator<Customer, Customer&, Customer*> const&, std::_Deque_iterator<Customer, Customer&, Customer*> const&) [63]
+[88]        0.2       0.01       0.01 / 0.00       bool std::operator==<Customer, Customer&, Customer*>(std::_Deque_iterator<Customer, Customer&, Customer*> const&, std::_Deque_iterator<Customer, Customer&, Customer*> const&)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.2  .........       0.01 / 2.08         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_replace_safe(unsigned long, unsigned long, char const*, unsigned long) [7]
+[89]        0.2       0.01       0.01 / 0.00       std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, unsigned long)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.2  .........       0.01 / 0.26         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::operator=(char const*) [33]
+[90]        0.2       0.01       0.01 / 0.00       strlen
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Rank    % total       Self       Self / Children   Function
+            0.2  .........       0.01 / 0.22         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::append(char const*, unsigned long) [37]
+[91]        0.2       0.01       0.01 / 0.00       memcpy
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.2  .........       0.01 / 0.02         std::_Deque_iterator<Customer, Customer&, Customer*>::_M_set_node(Customer**) [77]
+[92]        0.2       0.01       0.00 / 0.01       std::_Deque_iterator<Customer, Customer&, Customer*>::_S_buffer_size()
+            0.2  .........       0.01 / 0.20         std::__deque_buf_size(unsigned long) [42]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.2  .........       0.01 / 0.01         std::deque<std::deque<Customer*, std::allocator<Customer*> >, std::allocator<std::deque<Customer*, std::allocator<Customer*> > > >::_M_destroy_data_aux(std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>, std::_Deque_iterator<std::deque<Customer*, std::allocator<Customer*> >, std::deque<Customer*, std::allocator<Customer*> >&, std::deque<Customer*, std::allocator<Customer*> >*>) [85]
+[93]        0.2       0.01       0.00 / 0.01       void std::_Destroy<std::deque<Customer*, std::allocator<Customer*> >*, std::deque<Customer*, std::allocator<Customer*> > >(std::deque<Customer*, std::allocator<Customer*> >*, std::deque<Customer*, std::allocator<Customer*> >*, std::allocator<std::deque<Customer*, std::allocator<Customer*> > >&)
+            0.2  .........       0.01 / 0.01         void std::_Destroy<std::deque<Customer*, std::allocator<Customer*> >*>(std::deque<Customer*, std::allocator<Customer*> >*, std::deque<Customer*, std::allocator<Customer*> >*) [95]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.1  .........       0.01 / 0.53         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() [25]
+            0.1  .........       0.01 / 1.78         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, unsigned long) [8]
+[94]        0.2       0.01       0.01 / 0.00       @{libstdc++.so.6.0.18+773416}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.2  .........       0.01 / 0.01         void std::_Destroy<std::deque<Customer*, std::allocator<Customer*> >*, std::deque<Customer*, std::allocator<Customer*> > >(std::deque<Customer*, std::allocator<Customer*> >*, std::deque<Customer*, std::allocator<Customer*> >*, std::allocator<std::deque<Customer*, std::allocator<Customer*> > >&) [93]
+[95]        0.2       0.01       0.00 / 0.01       void std::_Destroy<std::deque<Customer*, std::allocator<Customer*> >*>(std::deque<Customer*, std::allocator<Customer*> >*, std::deque<Customer*, std::allocator<Customer*> >*)
+            0.2  .........       0.01 / 0.01         void std::_Destroy_aux<false>::__destroy<std::deque<Customer*, std::allocator<Customer*> >*>(std::deque<Customer*, std::allocator<Customer*> >*, std::deque<Customer*, std::allocator<Customer*> >*) [97]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.2  .........       0.01 / 1.36         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep::_S_create(unsigned long, unsigned long, std::allocator<char> const&) [12]
+[96]        0.2       0.01       0.01 / 0.00       operator new(unsigned long)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.2  .........       0.01 / 0.01         void std::_Destroy<std::deque<Customer*, std::allocator<Customer*> >*>(std::deque<Customer*, std::allocator<Customer*> >*, std::deque<Customer*, std::allocator<Customer*> >*) [95]
+[97]        0.2       0.01       0.00 / 0.01       void std::_Destroy_aux<false>::__destroy<std::deque<Customer*, std::allocator<Customer*> >*>(std::deque<Customer*, std::allocator<Customer*> >*, std::deque<Customer*, std::allocator<Customer*> >*)
+            0.2  .........       0.01 / 0.01         void std::_Destroy<std::deque<Customer*, std::allocator<Customer*> > >(std::deque<Customer*, std::allocator<Customer*> >*) [98]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.2  .........       0.01 / 0.01         void std::_Destroy_aux<false>::__destroy<std::deque<Customer*, std::allocator<Customer*> >*>(std::deque<Customer*, std::allocator<Customer*> >*, std::deque<Customer*, std::allocator<Customer*> >*) [97]
+[98]        0.2       0.01       0.00 / 0.01       void std::_Destroy<std::deque<Customer*, std::allocator<Customer*> > >(std::deque<Customer*, std::allocator<Customer*> >*)
+            0.2  .........       0.01 / 0.01         std::deque<Customer*, std::allocator<Customer*> >::~deque() [99]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.2  .........       0.01 / 0.01         void std::_Destroy<std::deque<Customer*, std::allocator<Customer*> > >(std::deque<Customer*, std::allocator<Customer*> >*) [98]
+[99]        0.2       0.01       0.00 / 0.01       std::deque<Customer*, std::allocator<Customer*> >::~deque()
+            0.2  .........       0.01 / 0.01         std::_Deque_base<Customer*, std::allocator<Customer*> >::~_Deque_base() [100]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.2  .........       0.01 / 0.01         std::deque<Customer*, std::allocator<Customer*> >::~deque() [99]
+[100]       0.2       0.01       0.00 / 0.01       std::_Deque_base<Customer*, std::allocator<Customer*> >::~_Deque_base()
+            0.2  .........       0.01 / 0.01         std::_Deque_base<Customer*, std::allocator<Customer*> >::_M_destroy_nodes(Customer***, Customer***) [101]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Rank    % total       Self       Self / Children   Function
+            0.2  .........       0.01 / 0.01         std::_Deque_base<Customer*, std::allocator<Customer*> >::~_Deque_base() [100]
+[101]       0.2       0.01       0.00 / 0.01       std::_Deque_base<Customer*, std::allocator<Customer*> >::_M_destroy_nodes(Customer***, Customer***)
+            0.2  .........       0.01 / 0.01         std::_Deque_base<Customer*, std::allocator<Customer*> >::_M_deallocate_node(Customer**) [102]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.2  .........       0.01 / 0.01         std::_Deque_base<Customer*, std::allocator<Customer*> >::_M_destroy_nodes(Customer***, Customer***) [101]
+[102]       0.2       0.01       0.00 / 0.01       std::_Deque_base<Customer*, std::allocator<Customer*> >::_M_deallocate_node(Customer**)
+            0.1  .........       0.01 / 0.20         std::__deque_buf_size(unsigned long) [42]
+            0.1  .........       0.01 / 0.01         __gnu_cxx::new_allocator<Customer*>::deallocate(Customer**, unsigned long) [113]
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.1  .........       0.01 / 5.69         readCustomersData(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) [5]
+[103]       0.1       0.01       0.01 / 0.00       std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.1  .........       0.01 / 5.69         readCustomersData(std::basic_string<char, std::char_traits<char>, std::allocator<char> >) [5]
+[104]       0.1       0.01       0.01 / 0.00       std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.1  .........       0.01 / 4.25         fillCustomerData(std::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, std::vector<std::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::basic_string<char, std::char_traits<char>, std::allocator<char> > > >&) [6]
+[105]       0.1       0.01       0.01 / 0.00       std::basic_string<char, std::char_traits<char>, std::allocator<char> >::assign(char const*, unsigned long)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.1  .........       0.01 / 0.72         std::basic_istream<char, std::char_traits<char> >& std::getline<char, std::char_traits<char>, std::allocator<char> >(std::basic_istream<char, std::char_traits<char> >&, std::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char) [17]
+[106]       0.1       0.01       0.01 / 0.00       std::basic_string<char, std::char_traits<char>, std::allocator<char> >::append(char const*, unsigned long)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.1  .........       0.01 / 1.78         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_M_mutate(unsigned long, unsigned long, unsigned long) [8]
+[107]       0.1       0.01       0.01 / 0.00       @{libstdc++.so.6.0.18+773425}
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.1  .........       0.01 / 1.46         operator new(unsigned long) [9]
+[108]       0.1       0.01       0.01 / 0.00       malloc
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.1  .........       0.01 / 0.53         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() [25]
+[109]       0.1       0.01       0.01 / 0.00       std::basic_string<char, std::char_traits<char>, std::allocator<char> >::_Rep::_M_destroy(std::allocator<char> const&)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.1  .........       0.01 / 0.53         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() [25]
+[110]       0.1       0.01       0.01 / 0.00       operator delete(void*)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+Rank    % total       Self       Self / Children   Function
+            0.1  .........       0.01 / 0.53         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() [25]
+[111]       0.1       0.01       0.01 / 0.00       free
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.1  .........       0.01 / 0.53         std::basic_string<char, std::char_traits<char>, std::allocator<char> >::~basic_string() [25]
+[112]       0.1       0.01       0.01 / 0.00       operator delete(void*)
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+            0.1  .........       0.01 / 0.01         std::_Deque_base<Customer*, std::allocator<Customer*> >::_M_deallocate_node(Customer**) [102]
+[113]       0.1       0.01       0.00 / 0.01       __gnu_cxx::new_allocator<Customer*>::deallocate(Customer**, unsigned long)
+            0.1  .........       0.01 / 0.23         _int_free [35]
